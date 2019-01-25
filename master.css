@@ -1,0 +1,432 @@
+
+/* IMPORTAZIONE FONT */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+
+/* BODY */
+body{
+  background-image:url("bg_home.jpg");
+  min-width:
+}
+
+
+/* CLASSE FORMA HEADER */
+.formaHeader {
+  margin: -8px;
+  height: 120px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #2B3D5E , #257295);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.formaHeader a{
+  float: right;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 38.5px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 1;
+}
+.formaHeader svg{
+  float: right;
+  display: inline-block;
+  margin-top: 30.8px;
+  margin-right: 50px;
+  margin-left: 100px;
+
+}
+.formaHeader svg:hover{
+  float: right;
+  display: inline-block;
+  margin-top: 30.8px;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+.formaHeader span{
+  opacity: 1;
+}
+
+
+/* LOGO UNO */
+#logoUno{
+  float: left;
+  position:absolute;
+  left: 50px;
+  top: -40.7px;
+  transition-duration: 0.2s;
+  opacity: 1;
+}
+
+
+/* ID CERCHIO LOGIN */
+#cerchioLogIn{
+  stroke:white;
+  stroke-width:3;
+  fill:url(avatar.png);
+  transition-duration: 0.2s;
+}
+#cerchioLogIn:hover{
+  stroke:#FE4A49;
+  stroke-width:4;
+  fill:url(avatar.png);
+  transition-duration: 0.2s
+}
+
+
+/* CLASSE VOCE MENU */
+.voceMenu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  padding-bottom: 7.5px;
+  border-bottom: 3.2px
+  solid #FFFFFF;
+  transition-duration: 0.2s;
+}
+.voceMenu:hover{
+  padding-bottom: 15px;
+  border-bottom: 3.2px solid #FE4A49;
+  transition-duration: 0.2s;
+}
+
+
+/* MENU AD HAMBURGHER */
+.container {
+  position: fixed;
+  top: 42px;
+  right: 50px;
+  width: 35px;
+  height: 27px;
+  opacity: 0;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  position: relative;
+  width: 35px;
+  height: 5px;
+  background-color: #FFFFFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* CLASSE TITOLO LINEA */
+.titoloLinea{
+  position: relative;
+  left: 95px;
+  top: 90px;
+  height: 130px;
+  width: 580px;
+  z-index: 0;
+  transition-duration: 0.2s;
+}
+.titoloLinea svg{
+  position: relative;
+  left: 0px;
+  top: 25px;
+  width: 150px;
+  height: 10px;
+  display: block;
+  transition: all ease-out 0.5s;
+}
+.titoloLinea line{
+  position: relative;
+  left: 95px;
+  top: 120px;
+  width: 600px;
+  height: 10px;
+  display: block;
+  stroke:#fe4a49;
+  stroke-width:10px;
+  transition: all ease-out 0.5s;
+}
+.titoloLinea:hover svg{
+  width: 610px;
+  height: 10px;
+  transition: all ease-out 0.5s;
+}
+.titoloLinea:hover line{
+  width: 600px;
+  height: 10px;
+  display: block;
+  stroke:#2B3D5E;
+  stroke-width:10px;
+  transition: all ease-out 0.5s;
+}
+
+/* ID TITOLO */
+#titolo{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #2B3D5E;
+  font-size: 40px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: auto;
+  width: 580px;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: 0.2s;
+}
+
+/* ID SOTTOTITOLO */
+#sottotitolo{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #707070;
+  font-size: 24px;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  height: auto;
+  width: 580px;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: 0.2s;
+}
+
+
+/* ID FONT BOTTONE */
+#fontBottone{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* CLASSE BOTTONE 1 */
+.button1 {
+  border-radius: 30px;
+  background-color: #fe4a49;
+  border: 3.2px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 170px;
+  transition: all 0.3s;
+  float: left;
+  position: relative;
+  top:50px;
+  left:0px;
+}
+.button1 span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.button1:hover {
+  box-shadow: 0 4px #d6d6d6;
+}
+.button1:hover span {
+  padding-right: 27px;
+}
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* CLASSE BOTTONE 2 */
+.button2 {
+  border-radius: 30px;
+  background-color: #707070;
+  border: 3.2px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 170px;
+  transition: all 0.3s;
+  float: left;
+  position: relative;
+  top: 50px;
+  left: 24.8px;
+}
+.button2 span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.button2:hover {
+  box-shadow: 0 4px #d6d6d6;
+}
+.button2:hover span {
+  padding-right: 27px;
+}
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* responsive layout */
+@media only screen and (max-width: 1150px){
+  div.container {
+    opacity: 1;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    z-index: 53
+  }
+
+  div.formaHeader a{
+    opacity: 0;
+    transition-duration: 0.3s;
+    z-index: 3;
+  }
+
+  div.formaHeader span{
+    opacity: 0;
+    transition-duration: 0.3s;
+    z-index: 3;
+  }
+
+  #logoUno{
+    float: left;
+    position:absolute;
+    left: -30px;
+    top: -40.7px;
+    transition-duration: 0.3s;
+  }
+
+  .titoloLinea{
+    position: relative;
+    left: 15px;
+    top: 90px;
+    transition-duration: 0.3s;
+  }
+}
+
+@media only screen and (max-width:600px){
+  #titolo{
+    font-size: 28.8px;
+    transition-duration: 0.3s;
+  }
+
+  #sottotitolo{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #707070;
+    font-size: 19px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    height: auto;
+    width: 580px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition-duration: 0.3s;
+  }
+
+  .button1 {
+    border-radius: 24px;
+    background-color: #fe4a49;
+    border: 3.2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14.4px;
+    padding: 7px;
+    width: 136px;
+    transition: all 0.3s;
+    float: left;
+    position: relative;
+    top:30px;
+    left:0px;
+  }
+
+  .button2 {
+    border-radius: 24px;
+    background-color: #707070;
+    border: 3.2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14.4px;
+    padding: 7px;
+    width: 136px;
+    transition: all 0.3s;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 14.8px;
+  }
+}
+
+@media only screen and (max-width:450px){
+
+  #titolo{
+    font-size: 22px;
+    transition-duration: 0.3s;
+  }
+
+  #sottotitolo{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #707070;
+    font-size: 14px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    height: auto;
+    width: 464px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition-duration: 0.3s;
+  }
+
+  .button1 {
+    border-radius: 24px;
+    background-color: #fe4a49;
+    border: 3.2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 11.5px;
+    padding: 5.5px;
+    width: 108px;
+    transition: all 0.3s;
+    float: left;
+    position: relative;
+    top:30px;
+    left:0px;
+  }
+
+  .button2 {
+    border-radius: 24px;
+    background-color: #707070;
+    border: 3.2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 11.5px;
+    padding: 5.5px;
+    width: 108px;
+    transition: all 0.3s;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 12.8px;
+  }
+}

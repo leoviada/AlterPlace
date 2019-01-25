@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it-IT" dir="ltr">
+  <head>
+
+    <!-- collegamento links -->
+    <meta charset="utf-8">
+    <title>AlterPlace</title>
+    <link rel="stylesheet" href="master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+
+    <div class="formaHeader" id="myformaHeader">
+      <!-- distanziatore dal bordo destro -->
+      <!-- <div class="margin"> -->
+      <!-- immagine -->
+        <img id="logoUno" src="logo.png" alt="logoUno">
+
+        <!-- login -->
+        <!-- <span>
+          <svg align=center width="64px" height="64px">
+            <circle id="cerchioLogIn"cx="32" cy="32" r="30"/>
+          </svg>
+        </span> -->
+
+
+        <!-- terza voce menu -->
+          <a href="#news"><span class="voceMenu">Chi siamo</span></a>
+
+        <!-- seconda voce menu -->
+          <a href="#news"><span class="voceMenu">Come funziona</span></a>
+
+        <!-- prima voce menu -->
+          <a href="#news"><span class="voceMenu">Impianti</span></a>
+
+        <!-- menu ad haburger -->
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+    </div>
+
+    <!-- titolo principale e bottoni-->
+    <div class="titoloLinea">
+
+      <!-- titolo principale -->
+      <h1 id="titolo">Trova, prenota e recensisci <br> gli impianti sportivi della città</h1>
+
+      <!-- linea animata -->
+      <svg>
+        <line x1="0" y1="0" x2="600" y2="0"/>
+      </svg>
+
+      <!-- sottotitolo -->
+      <h4 id="sottotitolo">Con AlterPlace puoi pianificare la tua <br> esperienza sportiva: dalle informazioni<br>sull'impianto alla prenotazione.<strong>Gratis</
+
+    </div>
+
+    <!-- pulsanti -->
+    <div id="bottoni">
+      <button class="button1">
+        <span id="fontBottone">Gli impianti </span>
+      </button>
+      <button class="button2">
+        <span id="fontBottone">Chi siamo </span>
+      </button>
+    </div>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+
+  </body>
+</html>
